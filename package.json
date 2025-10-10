@@ -3,16 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "description": "MetaMask Snap monorepo template",
+  "homepage": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask#readme",
+  "bugs": {
+    "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
+  },
+  "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspaces foreach -Ap run start",
-    "build": "yarn workspaces foreach -Ap run build",
-    "clean": "yarn workspaces foreach -Ap run clean"
+    "build": "yarn workspaces run build",
+    "start": "yarn workspace @limitedverse/site start",
+    "clean": "yarn workspaces run clean"
   },
-  "packageManager": "yarn@3.6.4",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
