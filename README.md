@@ -5,7 +5,7 @@ A MetaMask Snap monorepo template to quickly bootstrap your snap development.
 ## Prerequisites
 
 - Node.js >= 18.0.0
-- Yarn >= 3.6.4
+- Yarn (classic)
 - MetaMask Flask (for testing snaps in development)
 
 ## Getting Started
