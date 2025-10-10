@@ -1,24 +1,25 @@
 {
   "version": "0.1.0",
-  "description": "A MetaMask Snap template",
-  "proposedName": "@limitedverse/snap",
+  "description": "Example MetaMask Snap",
+  "proposedName": "Example Snap",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
+    "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
   },
   "source": {
-    "shasum": "auto-generated",
+    "shasum": "e7gm7M3G/ksrdNVQTTqPQevzWFjyEMIntgXOtYI9IbM=",
     "location": {
       "npm": {
         "filePath": "dist/bundle.js",
-        "iconPath": "images/icon.svg",
-        "packageName": "@limitedverse/snap",
-        "registry": "https://registry.npmjs.org/"
+        "packageName": "@limitedverse/example-snap",
+        "registry": "https://registry.npmjs.org/",
+        "iconPath": "images/icon.svg"
       }
     }
   },
   "initialPermissions": {
     "snap_dialog": {}
   },
+  "platformVersion": "3.2.0",
   "manifestVersion": "0.1"
 }

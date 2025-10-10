@@ -1,33 +1,11 @@
 # Dependencies
-node_modules/
+node_modules
 .pnp
 .pnp.js
 
-# Testing
-coverage/
-
 # Production
-dist/
-build/
-
-# Misc
-.DS_Store
-*.pem
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.eslintcache
-
-# IDE
-.vscode/
-.idea/
+dist
+build
 
 # Yarn
 .yarn/*
@@ -36,4 +14,23 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.pnp.*
+.yarn/install-state.gz
+
+# Misc
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Testing
+coverage

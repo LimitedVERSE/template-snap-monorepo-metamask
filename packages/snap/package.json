@@ -1,48 +1,32 @@
 {
-  "name": "@limitedverse/snap",
+  "name": "@limitedverse/example-snap",
   "version": "0.1.0",
-  "description": "A MetaMask Snap template",
+  "description": "Example MetaMask Snap",
+  "main": "./dist/bundle.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
+    "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
   },
-  "license": "MIT",
-  "main": "./dist/bundle.js",
-  "files": [
-    "dist/",
-    "snap.manifest.json",
-    "images/"
-  ],
+  "source": "src/index.ts",
   "scripts": {
     "build": "mm-snap build",
-    "build:clean": "yarn clean && yarn build",
-    "clean": "rimraf dist",
-    "lint": "yarn lint:eslint && yarn lint:misc --check",
-    "lint:eslint": "eslint . --cache --ext js,ts",
-    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
-    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "serve": "mm-snap serve",
-    "start": "mm-snap watch"
+    "start": "mm-snap watch",
+    "clean": "rimraf dist"
   },
+  "keywords": [
+    "MetaMask",
+    "Snaps",
+    "Ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "@metamask/snaps-sdk": "^3.0.0"
+    "@metamask/snaps-sdk": "^3.1.1"
   },
   "devDependencies": {
-    "@metamask/snaps-cli": "^6.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jest": "^27.2.3",
-    "eslint-plugin-jsdoc": "^46.4.3",
-    "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.0",
-    "rimraf": "^5.0.1",
-    "typescript": "^5.1.6"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "@metamask/snaps-cli": "^6.2.1",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5"
   }
 }

@@ -1,59 +1,71 @@
 # template-snap-monorepo-metamask
 
-A MetaMask Snap monorepo template to quickly bootstrap your snap development.
+A MetaMask Snap monorepo template with a development environment and example site.
+
+## Features
+
+- 🔌 MetaMask Snap with TypeScript support
+- 🌐 React-based demo site with Vite
+- 📦 Yarn workspaces for monorepo management
+- 🔥 Hot reload for both snap and site during development
 
 ## Prerequisites
 
-- Node.js >= 18.0.0
-- Yarn (classic)
-- MetaMask Flask (for testing snaps in development)
+- Node.js >= 18
+- MetaMask Flask browser extension (for testing snaps)
 
-## Getting Started
+## Quick Start
 
-1. Install dependencies:
-   ```bash
-   yarn install
-   ```
+```bash
+# Install dependencies
+yarn install
 
-2. Start the development server:
-   ```bash
-   yarn start
-   ```
+# Start development servers
+yarn start
+```
 
-   This will:
-   - Start the snap development server on http://localhost:8080
-   - Start the demo site on http://localhost:3000
-
-3. Open http://localhost:3000 in your browser with MetaMask Flask installed
+This will start:
+- Snap development server on http://localhost:8080
+- Demo site on http://localhost:3000
 
 ## Project Structure
 
 ```
 .
 ├── packages/
-│   ├── snap/          # MetaMask Snap package
-│   └── site/          # Demo React application
-└── package.json       # Root workspace configuration
+│   ├── snap/              # MetaMask Snap
+│   │   ├── src/
+│   │   │   └── index.ts   # Snap entry point
+│   │   ├── snap.config.ts # Snap configuration
+│   │   └── snap.manifest.json
+│   └── site/              # Demo website
+│       ├── src/
+│       │   ├── App.tsx    # Main app component
+│       │   └── main.tsx   # Entry point
+│       └── vite.config.ts
+└── package.json           # Root package.json with workspaces
 ```
 
 ## Available Scripts
 
-- `yarn install` - Install all dependencies
-- `yarn start` - Start the development server (site + snap)
-- `yarn build` - Build all packages
-- `yarn clean` - Clean all build artifacts
+- `yarn start` - Start development servers for all packages
+- `yarn build` - Build all packages for production
+- `yarn clean` - Clean build artifacts
 
-## Packages
+## Testing the Snap
 
-### @limitedverse/snap
+1. Install [MetaMask Flask](https://metamask.io/flask/)
+2. Run `yarn start`
+3. Open http://localhost:3000 in your browser
+4. Click "Connect Snap" to install the snap
+5. Click "Send Hello" to test the snap functionality
 
-The MetaMask Snap package that runs in the MetaMask extension.
+## Development
 
-### @limitedverse/site
-
-A React demo application to interact with the snap.
+The snap will automatically rebuild when you make changes to files in `packages/snap/src/`.
+The site will hot-reload when you make changes to files in `packages/site/src/`.
 
 ## Learn More
 
 - [MetaMask Snaps Documentation](https://docs.metamask.io/snaps/)
-- [Snaps API Reference](https://docs.metamask.io/snaps/reference/)
+- [Snaps API Reference](https://docs.metamask.io/snaps/reference/snaps-api/)
