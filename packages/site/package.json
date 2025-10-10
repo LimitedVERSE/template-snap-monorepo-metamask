@@ -1,7 +1,7 @@
 {
   "name": "@limitedverse/example-snap-site",
   "version": "0.1.0",
-  "description": "Example site for MetaMask Snap",
+  "description": "QuantumYield Edition - MetaMask Snap",
   "private": true,
   "scripts": {
     "start": "vite",
