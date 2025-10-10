@@ -1,0 +1,24 @@
+{
+  "name": "@limitedverse/example-snap-site",
+  "version": "0.1.0",
+  "description": "Example site for MetaMask Snap",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@metamask/providers": "^16.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}
