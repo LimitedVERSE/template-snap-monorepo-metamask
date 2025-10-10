@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import type { OnRpcRequestHandler } from '@metamask/snaps-sdk';
-=======
 import { OnRpcRequestHandler } from '@metamask/snaps-sdk';
->>>>>>> main
 import { panel, text, heading } from '@metamask/snaps-sdk';
 
 /**
@@ -24,19 +20,11 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
       return snap.request({
         method: 'snap_dialog',
         params: {
-<<<<<<< HEAD
-          type: 'alert',
-          content: panel([
-            heading('Hello from MetaMask Snap!'),
-            text(`Hello, **${origin}**!`),
-            text('This is an example snap demonstrating basic functionality.'),
-=======
           type: 'confirmation',
           content: panel([
             heading('Hello from MetaMask Snap!'),
             text(`Hello, **${origin}**!`),
             text('This is a custom confirmation from your snap.'),
->>>>>>> main
           ]),
         },
       });
