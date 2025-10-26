@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "@limitedverse/example-snap-site",
   "version": "0.1.0",
   "description": "QuantumYield Edition - MetaMask Snap",
@@ -7,6 +8,31 @@
     "start": "vite",
     "build": "tsc && vite build",
     "clean": "rimraf dist"
+=======
+  "name": "@limitedverse/site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MetaMask Snap demo site",
+  "homepage": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask#readme",
+  "bugs": {
+    "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "clean": "rimraf dist",
+    "dev": "vite",
+    "lint": "yarn lint:eslint && yarn lint:misc --check",
+    "lint:eslint": "eslint . --cache --ext js,ts,tsx",
+    "lint:fix": "yarn lint:eslint --fix && yarn lint:misc --write",
+    "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
+    "preview": "vite preview",
+    "start": "vite"
+>>>>>>> main
   },
   "dependencies": {
     "@metamask/providers": "^16.0.0",
@@ -14,11 +40,31 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3",
     "vite": "^5.0.11"
+=======
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.5"
+>>>>>>> main
   }
 }

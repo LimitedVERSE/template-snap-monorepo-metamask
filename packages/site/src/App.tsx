@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react';
 
 const snapId = 'local:http://localhost:8080';
@@ -12,12 +13,26 @@ function App() {
     };
     checkMetaMask();
   }, []);
+=======
+import React, { useState } from 'react';
+
+declare global {
+  interface Window {
+    ethereum?: any;
+  }
+}
+
+export const App: React.FC = () => {
+  const [snapInstalled, setSnapInstalled] = useState(false);
+  const [message, setMessage] = useState('');
+>>>>>>> main
 
   const connectSnap = async () => {
     try {
       await window.ethereum.request({
         method: 'wallet_requestSnaps',
         params: {
+<<<<<<< HEAD
           [snapId]: {},
         },
       });
@@ -25,11 +40,21 @@ function App() {
     } catch (error) {
       console.error('Failed to connect snap:', error);
       alert('Failed to connect snap. Make sure MetaMask Flask is installed and the snap is running.');
+=======
+          'local:http://localhost:8080': {},
+        },
+      });
+      setSnapInstalled(true);
+      setMessage('Snap connected successfully!');
+    } catch (error) {
+      setMessage(`Error: ${error instanceof Error ? error.message : 'Unknown error'}`);
+>>>>>>> main
     }
   };
 
   const sendHello = async () => {
     try {
+<<<<<<< HEAD
       await window.ethereum.request({
         method: 'wallet_invokeSnap',
         params: {
@@ -42,10 +67,23 @@ function App() {
     } catch (error) {
       console.error('Failed to send hello:', error);
       alert('Failed to send hello.');
+=======
+      const response = await window.ethereum.request({
+        method: 'wallet_invokeSnap',
+        params: {
+          snapId: 'local:http://localhost:8080',
+          request: { method: 'hello' },
+        },
+      });
+      setMessage(`Response: ${JSON.stringify(response)}`);
+    } catch (error) {
+      setMessage(`Error: ${error instanceof Error ? error.message : 'Unknown error'}`);
+>>>>>>> main
     }
   };
 
   return (
+<<<<<<< HEAD
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h1>MetaMask Snap Example</h1>
       {!isMetaMaskInstalled ? (
@@ -77,3 +115,38 @@ function App() {
 }
 
 export default App;
+=======
+    <div className="container">
+      <h1>MetaMask Snap Template</h1>
+      <div className="card">
+        <h2>Getting Started</h2>
+        <p>
+          This is a template for a MetaMask Snap. Connect your snap to get started.
+        </p>
+        
+        {!snapInstalled ? (
+          <button onClick={connectSnap}>Connect Snap</button>
+        ) : (
+          <button onClick={sendHello}>Send Hello</button>
+        )}
+        
+        {message && (
+          <div className="message">
+            {message}
+          </div>
+        )}
+      </div>
+      
+      <div className="info">
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Make sure MetaMask Flask is installed</li>
+          <li>Run <code>yarn start</code> to start the development server</li>
+          <li>Click "Connect Snap" to install the snap</li>
+          <li>Click "Send Hello" to interact with the snap</li>
+        </ol>
+      </div>
+    </div>
+  );
+};
+>>>>>>> main
