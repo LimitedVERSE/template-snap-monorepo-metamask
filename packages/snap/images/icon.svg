@@ -1,4 +1,9 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< HEAD
+  <circle cx="12" cy="12" r="10" fill="#037DD6"/>
+  <path d="M12 7v10M7 12h10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+=======
   <circle cx="12" cy="12" r="10" fill="#6F4CFF"/>
   <path d="M12 6V12L16 14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+>>>>>>> main
 </svg>

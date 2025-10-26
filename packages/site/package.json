@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+  "name": "@limitedverse/example-snap-site",
+  "version": "0.1.0",
+  "description": "QuantumYield Edition - MetaMask Snap",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "clean": "rimraf dist"
+=======
   "name": "@limitedverse/site",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +32,7 @@
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "preview": "vite preview",
     "start": "vite"
+>>>>>>> main
   },
   "dependencies": {
     "@metamask/providers": "^16.0.0",
@@ -29,6 +40,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+=======
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
@@ -46,5 +65,6 @@
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.5"
+>>>>>>> main
   }
 }
