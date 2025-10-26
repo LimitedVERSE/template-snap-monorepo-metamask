@@ -1,4 +1,35 @@
 {
+<<<<<<< HEAD
+  "name": "@limitedverse/example-snap",
+  "version": "0.1.0",
+  "description": "Example MetaMask Snap",
+  "main": "./dist/bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
+  },
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "mm-snap build",
+    "serve": "mm-snap serve",
+    "start": "mm-snap watch",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "MetaMask",
+    "Snaps",
+    "Ethereum"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@metamask/snaps-sdk": "^3.1.1"
+  },
+  "devDependencies": {
+    "@metamask/snaps-cli": "^6.2.1",
+    "prettier": "^3.2.4",
+    "rimraf": "^5.0.5"
+=======
   "name": "@limitedverse/snap",
   "version": "0.1.0",
   "description": "A MetaMask Snap template",
@@ -44,5 +75,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+>>>>>>> main
   }
 }

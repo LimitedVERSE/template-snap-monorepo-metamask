@@ -1,4 +1,13 @@
 # Dependencies
+<<<<<<< HEAD
+node_modules
+.pnp
+.pnp.js
+
+# Production
+dist
+build
+=======
 node_modules/
 .pnp
 .pnp.js
@@ -28,6 +37,7 @@ yarn-error.log*
 # IDE
 .vscode/
 .idea/
+>>>>>>> main
 
 # Yarn
 .yarn/*
@@ -36,4 +46,27 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+<<<<<<< HEAD
+.yarn/install-state.gz
+
+# Misc
+.DS_Store
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Testing
+coverage
+=======
 .pnp.*
+>>>>>>> main

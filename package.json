@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "description": "MetaMask Snap monorepo template",
+<<<<<<< HEAD
+=======
   "homepage": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask#readme",
   "bugs": {
     "url": "https://github.com/LimitedVERSE/template-snap-monorepo-metamask/issues"
@@ -12,10 +14,20 @@
     "url": "git+https://github.com/LimitedVERSE/template-snap-monorepo-metamask.git"
   },
   "license": "MIT",
+>>>>>>> main
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+<<<<<<< HEAD
+    "start": "yarn workspaces foreach -Ap run start",
+    "build": "yarn workspaces foreach -Ap run build",
+    "clean": "yarn workspaces foreach -Ap run clean"
+  },
+  "packageManager": "yarn@3.6.4",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+=======
     "build": "yarn workspaces run build",
     "start": "yarn workspace @limitedverse/site start",
     "clean": "yarn workspaces run clean"
@@ -35,5 +47,6 @@
   },
   "engines": {
     "node": ">=18.0.0"
+>>>>>>> main
   }
 }

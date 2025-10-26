@@ -3,17 +3,26 @@
     "target": "ES2020",
     "module": "commonjs",
     "lib": ["ES2020"],
+<<<<<<< HEAD
+=======
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
     "removeComments": true,
+>>>>>>> main
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+<<<<<<< HEAD
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+=======
     "moduleResolution": "node"
+>>>>>>> main
   }
 }
