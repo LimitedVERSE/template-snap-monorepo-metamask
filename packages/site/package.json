@@ -32,7 +32,6 @@
     "lint:misc": "prettier '**/*.json' '**/*.md' '!CHANGELOG.md' --ignore-path .gitignore",
     "preview": "vite preview",
     "start": "vite"
->>>>>>> main
   },
   "dependencies": {
     "@metamask/providers": "^16.0.0",
